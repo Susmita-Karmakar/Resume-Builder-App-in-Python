@@ -111,7 +111,7 @@ class Login:
         self.login.pack(side='left', ipadx=20, ipady=4)
 
     def clear(self):
-        for i in self.root.pack_slaves():
+        for i in self.root.pack_subordinates():
             i.destroy()
 
     def btn_click(self):
